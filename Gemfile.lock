@@ -81,6 +81,7 @@ GEM
     debug (1.4.0)
       irb (>= 1.3.6)
       reline (>= 0.2.7)
+    digest (3.1.0)
     erubi (1.10.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -106,8 +107,16 @@ GEM
     mini_mime (1.1.2)
     minitest (5.15.0)
     msgpack (1.5.1)
+    net-protocol (0.1.3)
+      timeout
+    net-smtp (0.3.1)
+      digest
+      net-protocol
+      timeout
     nio4r (2.5.8)
     nokogiri (1.13.6-x64-mingw-ucrt)
+      racc (~> 1.4)
+    nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     public_suffix (4.0.7)
     puma (5.6.4)
@@ -163,6 +172,7 @@ GEM
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
     thor (1.2.1)
+    timeout (0.2.0)
     turbo-rails (1.0.1)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
@@ -188,6 +198,7 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -195,6 +206,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  net-smtp (~> 0.3.1)
   puma (~> 5.0)
   rails (~> 6.1.6)
   selenium-webdriver

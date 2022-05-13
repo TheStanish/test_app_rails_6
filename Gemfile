@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+# net-smtp
+gem "net-smtp", "~> 0.3.1"
+
 #tzinfo-data
 gem 'tzinfo-data', '~> 1.2021', '>= 1.2021.5'
 
